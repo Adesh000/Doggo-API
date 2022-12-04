@@ -23,18 +23,19 @@ const Register = () => {
         <div className="main">
             <form onSubmit={handleRegister}>
                 <h2>REGISTER</h2>
-                <label htmlFor="name">Name</label>
+                <label htmlFor="userName">Name</label>
                 <input
                     type="text"
-                    name="userName"
-                    id="name"
+                    name="name"
+                    id="userName"
                     value={input.name}
                     onChange={(e) =>
                         setInput({ ...input, [e.target.name]: e.target.value })
                     }
                 />
                 <br />
-                <label htmlFor="email">Email</label>
+                
+                <label htmlFor="userEmail">Email</label>
                 <input
                     type="email"
                     id="userEmail"
@@ -45,7 +46,7 @@ const Register = () => {
                     value={input.email}
                 />
                 <br />
-                <label htmlFor="password">Password</label>
+                <label htmlFor="userPassword">Password</label>
                 <input
                     type="text"
                     id="userPassword"
